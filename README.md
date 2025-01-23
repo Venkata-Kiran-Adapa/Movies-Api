@@ -28,7 +28,7 @@ Make sure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/movies-api.git
+   git clone https://github.com/Venkata-Kiran-Adapa/Movies-Api.git
    ```
 
 2. Navigate to the project directory:
