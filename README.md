@@ -1,3 +1,4 @@
+
 # Movies API
 
 A simple API for managing movie data built with **Node.js**, **Express**, and **MongoDB**. This API allows you to perform CRUD operations on movie records, including querying by title, directors, year, and genres.
@@ -28,15 +29,24 @@ Make sure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/movies-api.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
    cd movies-api
    ```
 
-2. Install the dependencies:
+3. Install the dependencies:
    ```bash
    npm install
    ```
 
-3. Set up the MongoDB database:
+4. Import the sample movie data into MongoDB:
+   ```bash
+   mongoimport --db Practice --collection movies --file movies.json --jsonArray
+   ```
+
+5. Set up the MongoDB database:
    - Ensure MongoDB is running locally or connect to a remote MongoDB instance (for example, MongoDB Atlas).
    - Update the connection URI in `index.js` if necessary:
      ```js
@@ -46,7 +56,7 @@ Make sure you have the following installed:
      })
      ```
 
-4. Run the application:
+6. Run the application:
    ```bash
    npm start
    ```
@@ -122,5 +132,9 @@ You can create a `.env` file in the root of your project and add the variables l
 MONGO_URI=mongodb://localhost/Practice
 PORT=3000
 ```
+
+## Testing
+
+This project currently does not include automated tests. You can manually test the API using tools like [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/).
 
 
